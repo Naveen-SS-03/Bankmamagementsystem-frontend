@@ -1,0 +1,52 @@
+<div class="wrapper">
+    <div class="title">
+         Transaction
+    </div><form (ngSubmit)="onSubmit()" action="">
+    <div class="form">
+
+        <div class="inputfield">
+            <label>TransactionId</label>
+            <input type="text" class="input" id="transactionId" name="transactionnId" placeholder="transactionId" [(ngModel)]="transaction.transactionId" required>
+          </div>
+        
+       <div class="inputfield">
+        <label>Name</label>
+        <input type="text" class="input" id="transactionname" name="transactionname" placeholder="transactionname" [(ngModel)]="transaction.name" required>
+      </div>
+      <br>
+       <div class="inputfield">
+          <label>AccountNumber</label>
+          <input type="accountNum" id="accountNum" name="accountNum" class="input" placeholder="accountNum" [(ngModel)]="transaction.accountNum" required>
+       </div> 
+       <br>
+      <div class="inputfield">
+          <label>RecipeintAccount</label>
+          <input type="recipeintacc" class="input" id="recipeintacc" name="recipeintacc" placeholder="recipeintacc" [(ngModel)]="transaction.recipeintacc" required>
+       </div> 
+      <br> 
+     <div class="inputfield">
+          <label>Amount</label>
+          <input type="text" class="input" id="amount" name="amount" placeholder="amount" [(ngModel)]="transaction.amount" required>
+       </div> 
+     <br>
+    <div class="inputfield">
+          <label>Description</label>
+          <input type="text" class="input" id="description" name="description" placeholder="description" [(ngModel)]="transaction.description" required>
+       </div> 
+    <br>
+
+
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+          <p>Above mentioned details are correct</p>
+       </div> 
+      <div class="inputfield">
+        
+        <button class="btn btn-success" type="submit" style="margin-bottom: 30px;margin-left: 47%;">submit</button>
+      </div>
+    </div>
+    </form>
+</div>

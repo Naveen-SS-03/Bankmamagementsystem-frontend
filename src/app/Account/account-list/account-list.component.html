@@ -1,0 +1,29 @@
+<div class="spacer"></div>
+<a routerLink="Account/getall" routerLinkActive="active" class="card"  rel="noopener" >  
+  <span>List Account</span>
+</a>
+<a routerLink="Account/create" routerLinkActive="active" class="card"  rel="noopener" >  
+  <span>ADD Account</span>
+</a>
+<h2 class="text-center">Account Details</h2> <br> <br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>AccountId</th>
+            <th>Name</th>
+            <th>Accounttype</th>
+            <th>AccountNumber</th>
+            <th>Accountbalance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let account of account">
+           <td> {{account.id}} </td>
+           <td> {{account.accountholdername}} </td>
+           <td> {{account.accounttype}} </td>
+           <td> {{account.accountnumber}} </td>
+           <td> {{account.accountBalance}} </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,39 @@
+<div class="wrapper">
+    <div class="title">
+     Add Recipient 
+    </div><form (ngSubmit)="onSubmit()" action="">
+    <div class="form">
+       <div class="inputfield">
+          <label>Name</label>
+          <input type="text" class="input" id="name" name="Name" placeholder="Enter Name" [(ngModel)]="recipient.name" required>
+       </div>  
+       <br>  
+       <div class="inputfield">
+        <label>Phone Number</label>
+        <input type="text" class="input" id="Phonenumber" name="Phonenumber" placeholder="Phonenumber" [(ngModel)]="recipient.phonenumber" required>
+      </div> 
+      <br>
+       <div class="inputfield">
+          <label>Account Number</label>
+          <input type="Account Number" id="accountnumber" name="Accountnumber" class="input" placeholder="Accountnumber" [(ngModel)]="recipient.accountnumber" required>
+       </div> 
+       <br>
+      <div class="inputfield">
+          <label>Confirm Account Number</label>
+          <input type="Account Number" class="input" id="accountnumber" name="Accountnumber" placeholder="Accountnumber" [(ngModel)]="recipient.accountnumber" required>
+       </div> 
+      <br> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+          <p>Above mentioned details are correct</p>
+       </div> 
+      <div class="inputfield">
+        
+        <button class="btn btn-success" type="submit" style="margin-bottom: 30px;margin-left: 47%;">submit</button>
+      </div>
+    </div>
+    </form>
+</div>

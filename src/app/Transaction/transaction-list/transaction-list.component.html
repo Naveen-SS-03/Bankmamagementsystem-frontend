@@ -1,0 +1,34 @@
+<div class="spacer"></div>
+<a routerLink="Transaction/getall" routerLinkActive="active" class="card"  rel="noopener" >  
+  <span>List Transaction</span>
+</a>
+<a routerLink="Transaction/create" routerLinkActive="active" class="card"  rel="noopener" >  
+  <span>ADD Transaction</span>
+</a>
+<br>
+<br>
+<h2 class="text-center">Transaction Details</h2> <br> <br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Transaction-Id</th>
+            <th> Name</th>
+            <th>Account Number</th>
+            <th>Amount</th>
+            <th>Description</th>
+            <th>Recipeint-Account Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let transaction of transaction">
+           <td> {{transaction.transactionId}} </td>
+           <td> {{transaction.accountNum}} </td>
+           <td> {{transaction.description}} </td>
+           <td> {{transaction.name}} </td>
+           <td> {{transaction.recipeintacc}}</td>
+           <td> {{transaction.amount}}</td>
+
+        </tr>
+    </tbody>
+</table>

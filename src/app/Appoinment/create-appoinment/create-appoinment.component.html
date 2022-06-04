@@ -1,0 +1,41 @@
+<div class="wrapper">
+    <div class="title">
+     Book Appointment 
+    </div><form (ngSubmit)="onSubmit()" action="">
+    <div class="form">
+       <div class="inputfield">
+          <label>Name</label>
+          <input type="text" class="input" id="name" name="Name" placeholder="Enter Name" [(ngModel)]="appointment.name" required>
+       </div>  
+       <br>  
+       <div class="inputfield">
+        <label>Email</label>
+        <input type="Email" id="email" name="Email" class="input" placeholder="Email" [(ngModel)]="appointment.email" required>
+     </div> 
+       <div class="inputfield">
+        <label>Phone Number</label>
+        <input type="text" class="input" id="Phonenumber" name="Phonenumber" placeholder="Phonenumber" [(ngModel)]="appointment.phonenumber" required>
+      </div> 
+      <br>
+       <div class="inputfield">
+          <label>Location</label>
+          <input type="Location" id="location" name="Location" class="input" placeholder="Location" [(ngModel)]="appointment.location" required>
+       </div> 
+       <br>
+      <div class="inputfield">
+          <label>Date</label>
+          <input type="Date" class="input" id="date" name="Date"  [(ngModel)]="appointment.date" required>
+       </div> 
+      <br>
+      <div class="inputfield">
+        <label>Description</label>
+        <input type="Description" id="description" name="Description" class="input" placeholder="Description" [(ngModel)]="appointment.description" required>
+     </div> 
+     <br> 
+      <div class="inputfield">
+        
+        <button class="btn btn-success" type="submit" style="margin-bottom: 30px;margin-left: 47%;">Book Appointment</button>
+      </div>
+    </div>
+    </form>
+</div>

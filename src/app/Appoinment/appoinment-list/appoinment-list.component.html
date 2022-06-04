@@ -1,0 +1,32 @@
+<div class="spacer"></div>
+<a routerLink="Appointment/getall" routerLinkActive="active" class="card"  rel="noopener" >  
+  <span>List Appointment</span>
+</a>
+<a routerLink="Appointment/create" routerLinkActive="active" class="card"  rel="noopener" >  
+  <span>BOOK Appointment</span>
+</a>
+<br>
+<h2 class="text-center">Appointment Details</h2> <br> <br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>AppointmentId</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>PhoneNumber</th>
+            <th>Date</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let appointment of appointment">
+           <td> {{appointment.id}} </td>
+           <td> {{appointment.name}} </td>
+           <td> {{appointment.email}} </td>
+           <td> {{appointment.phonenumber}} </td>
+           <td> {{appointment.date}} </td>
+           <td> {{appointment.description}} </td>
+        </tr>
+    </tbody>
+</table>

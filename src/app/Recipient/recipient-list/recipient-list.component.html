@@ -1,0 +1,28 @@
+<div class="spacer"></div>
+<a routerLink="Recipient/getall" routerLinkActive="active" class="card"  rel="noopener" >  
+  <span>List Recipient</span>
+</a>
+<a routerLink="Recipient/create" routerLinkActive="active" class="card"  rel="noopener" >  
+  <span>ADD Recipient</span>
+</a>
+<br>
+<h2 class="text-center">Recipient Details</h2> <br> <br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>RecipientId</th>
+            <th>Name</th>
+            <th>PhoneNumber</th>
+            <th>AccountNumber</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let recipient of recipient">
+           <td> {{recipient.id}} </td>
+           <td> {{recipient.name}} </td>
+           <td> {{recipient.phonenumber}} </td>
+           <td> {{recipient.accountnumber}} </td>
+        </tr>
+    </tbody>
+</table>
