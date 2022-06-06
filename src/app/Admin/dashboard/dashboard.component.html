@@ -1,0 +1,34 @@
+<div id="viewport">
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <header>
+        <a routerLink="dashboard">My Bank</a>
+      </header>
+      <ul class="nav">
+        <div class="spacer">
+    <br>
+            <a routerLink="/dashboard/Account" routerLinkActive="active" class="card"  rel="noopener" >  
+              <span>Account</span>
+            </a>             
+           <br>
+          <a routerLink="/dashboard/Appointment" routerLinkActive="active" class="card"  rel="noopener" >  
+            <span>Appointment</span>
+          </a>
+          <br>
+          <a routerLink="/dashboard/Transaction" routerLinkActive="active" class="card"  rel="noopener" >  
+            <span>Transactions</span>
+          </a>
+           <br> 
+          <a routerLink="/dashboard/Recipient" routerLinkActive="active"  class="card"  rel="noopener" >  
+            <span>Recipients</span>
+          </a>
+        </div>    
+      </ul>
+    >
+    
+    </div>
+    <!-- Content -->
+    <div id="content" >
+    <router-outlet></router-outlet>
+    </div>
+</div>

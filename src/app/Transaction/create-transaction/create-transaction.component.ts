@@ -28,7 +28,7 @@ export class CreateTransactionComponent implements OnInit {
   }
 
   goToTransactionList(){
-    this.router.navigate(['Transaction/getall']);
+    this.router.navigate(['/Transaction']);
   }
 
   onSubmit(){

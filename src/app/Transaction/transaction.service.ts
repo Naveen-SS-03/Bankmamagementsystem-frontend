@@ -8,7 +8,7 @@ import { Transaction } from './transaction';
 })
 export class TransactionService {
 
-  private baseURL = "http://localhost:8080/Transaction/getAll"
+  private baseURL = "http://localhost:8080/Transaction/getall"
   private baseURL1 ="http://localhost:8080/Transaction/create"
 
 
