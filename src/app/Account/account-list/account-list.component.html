@@ -9,21 +9,29 @@
 
 <table class="table table-striped">
     <thead>
-        <tr>
-            <th>AccountId</th>
-            <th>Name</th>
-            <th>Accounttype</th>
-            <th>AccountNumber</th>
-            <th>Accountbalance</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let account of account">
-           <td> {{account.id}} </td>
-           <td> {{account.accountholdername}} </td>
-           <td> {{account.accounttype}} </td>
-           <td> {{account.accountnumber}} </td>
-           <td> {{account.accountBalance}} </td>
-        </tr>
+      <tr>
+        <th>AccountId</th>
+        <th>Name</th>
+        <th>Accounttype</th>
+        <th>AccountNumber</th>
+        <th>Accountbalance</th>
+        <th>Age</th>
+        <th>PancardNumber</th>
+        <th>Nationality</th>
+        <th>Address</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let account of account">
+       <td> {{account.id}} </td>
+       <td> {{account.accountholdername}} </td>
+       <td> {{account.accounttype}} </td>
+       <td> {{account.accountnumber}} </td>
+       <td> {{account.accountBalance}} </td>
+       <td> {{account.accountholderage}} </td>
+       <td> {{account.pancardnumber}} </td>
+       <td> {{account.nationality}} </td>
+       <td> {{account.address}} </td>
+    </tr>
     </tbody>
 </table>

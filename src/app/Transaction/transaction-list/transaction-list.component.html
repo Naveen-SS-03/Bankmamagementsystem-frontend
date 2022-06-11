@@ -23,11 +23,12 @@
     <tbody>
         <tr *ngFor="let transaction of transaction">
            <td> {{transaction.transactionId}} </td>
-           <td> {{transaction.accountNum}} </td>
-           <td> {{transaction.description}} </td>
            <td> {{transaction.name}} </td>
-           <td> {{transaction.recipeintacc}}</td>
+           <td> {{transaction.accountNum}} </td>
            <td> {{transaction.amount}}</td>
+           <td> {{transaction.description}} </td>
+           <td> {{transaction.recipeintacc}}</td>
+           
 
         </tr>
     </tbody>
