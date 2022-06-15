@@ -19,6 +19,7 @@ import { LoginComponent } from './Admin/login/login.component';
 import { RegistrationComponent } from './Admin/registration/registration.component';
 import { FooterComponent } from './Admin/footer/footer.component';
 import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+import { UpdateAccountComponent } from './Account/update-account/update-account.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { DashboardComponent } from './Admin/dashboard/dashboard.component';
     AdminLoginComponent,
     AdminRegistrationComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    UpdateAccountComponent
 
   ],
   imports: [

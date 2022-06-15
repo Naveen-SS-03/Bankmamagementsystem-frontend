@@ -15,10 +15,13 @@
       </div>
       <br>
        <div class="inputfield">
+        <div class="inputfield">
           <label>AccountNumber</label>
-          <input type="accountNum" id="accountNum" name="accountNum" class="input" placeholder="accountNum" [(ngModel)]="transaction.accountNum" required>
-       </div> 
-       <br>
+          <input type="accountNum" id="accountNum" name="accountNum" class="input" required placeholder="accountNum" [(ngModel)]="transaction.accountNum"
+          #accountNum="ngModel" [class.is-invalid]="accountNum.invalid && accountNum.touched">
+          <small class="text-danger" [class.d-none]="accountNum.valid||accountNum.untouched">accountNum is required</small>
+         
+       </div>
       <div class="inputfield">
           <label>RecipeintAccount</label>
           <input type="recipeintacc" class="input" id="recipeintacc" name="recipeintacc" placeholder="recipeintacc" [(ngModel)]="transaction.recipeintacc" required>

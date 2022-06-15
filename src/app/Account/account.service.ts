@@ -11,7 +11,8 @@ export class AccountService {
 
   private baseURL = "http://localhost:8080/Account/getall"
   private baseURL1 = "http://localhost:8080/Account/create"
-
+  private baseURL2 = "http://localhost:8080/Account/updateAccount"
+  
   constructor(private httpClient: HttpClient) { }
 
   getAccountList(): Observable<Account[]>{
@@ -26,4 +27,8 @@ export class AccountService {
     return this.httpClient.get<Account>(`${this.baseURL}/${id}`);
   }
 
+  updateAccount(id: number, account: Account): Observable<Object>{
+    return this.httpClient.put(`${this.baseURL2}/${id}`, account);
+  }
+  
 }

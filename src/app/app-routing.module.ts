@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountListComponent } from './Account/account-list/account-list.component';
 import { CreateAccountComponent } from './Account/create-account/create-account.component';
+import { UpdateAccountComponent } from './Account/update-account/update-account.component';
 import { AdminLoginComponent } from './Admin/admin-login/admin-login.component';
 import { AdminRegistrationComponent } from './Admin/admin-registration/admin-registration.component';
 import { DashboardComponent } from './Admin/dashboard/dashboard.component';
@@ -27,6 +28,8 @@ const routes: Routes = [
   {path: `Account`, component: AccountListComponent},
   {path: `Account/Account/create`, component: CreateAccountComponent},
   {path: '', redirectTo:`Account/Account/getall`,pathMatch:'full'},
+  {path:'Account/updateAccount',component:UpdateAccountComponent},
+
   
   {path: `Transaction`, component: TransactionListComponent},
   {path: `Transaction/Transaction/create`, component: CreateTransactionComponent},

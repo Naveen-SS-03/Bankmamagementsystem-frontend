@@ -32,14 +32,15 @@ export class AdminLoginComponent implements OnInit {
       console.log(body)
          this.http.post("http://localhost:8080/log/login",body).subscribe ((data)=>{
           
-          if (data=="plese check password"){
-            alert("plese check password")
-              
-          }else{
-            this.router.navigateByUrl('dashboard')
-          }
-        });
-      
+          console.log(data);
+          alert('success');
+          this.router.navigateByUrl('dashboard');
+      },
+      (error) => {
+        console.log(error);
+          alert('Invalid Username or Password');
+      }
+      );
 
   }
   get name(){

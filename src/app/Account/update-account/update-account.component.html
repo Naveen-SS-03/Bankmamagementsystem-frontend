@@ -1,0 +1,53 @@
+<div class="wrapper">
+    <div class="title">
+     Update Account
+    </div><form (ngSubmit)="onSubmit()" action="">
+    <div class="form">
+       <div class="inputfield">
+          <label>Name</label>
+          <input type="text" class="input" id="name" name="Name" placeholder="Enter Name" [(ngModel)]="account.accountholdername" required >
+       </div>  
+       <br>  
+       <div class="inputfield">
+        <label>Account Type</label>
+        <input type="text" class="input" id="accounttype" name="accounttype" placeholder="accounttype" [(ngModel)]="account.accounttype" required >
+      </div> 
+      <br>
+       <div class="inputfield">
+          <label>Account Number</label>
+          <input type="Account Number" id="accountnumber" name="Accountnumber" class="input" placeholder="Accountnumber" [(ngModel)]="account.accountnumber" required >
+       </div> 
+       <br>
+      <div class="inputfield">
+          <label>Account Balance</label>
+          <input type="Account Balance" class="input" id="accountbalance" name="AccountBalance" placeholder="AccountBalance" [(ngModel)]="account.accountBalance" required >
+       </div> 
+      <br> 
+      <div class="inputfield">
+         <label>Age</label>
+         <input type="Age" class="input" id="age" name="Age" placeholder="Age" [(ngModel)]="account.accountholderage" required >
+      </div> 
+     <br> 
+     <div class="inputfield">
+      <label>Nationality</label>
+      <input type="Nationality" class="input" id="nationality" name="Nationality" placeholder="Nationality" [(ngModel)]="account.nationality" required >
+   </div> 
+  <br> 
+  <div class="inputfield">
+   <label>PancardNumber</label>
+   <input type="PancardNumber" class="input" id="pancardnumber" name="pancardnumber" placeholder="PancardNumber" [(ngModel)]="account.pancardnumber" required >
+</div> 
+<br> 
+<div class="inputfield">
+   <label>Address</label>
+   <textarea type="Address" class="input" id="address" name="address" placeholder="Address" rows="10" cols="30" [(ngModel)]="account.address" ></textarea>
+</div> 
+<br> 
+    
+      <div class="inputfield">
+        
+        <button class="btn btn-success" type="submit" style="margin-bottom: 30px;margin-left: 47%;">submit</button>
+      </div>
+    </div>
+    </form>
+</div>
